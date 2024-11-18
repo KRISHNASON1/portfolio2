@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Soni - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .menu-closed {
+            display: none;
+        }
+        
+        .menu-open {
+            display: block;
+        }
+
+        /* Icons */
+        .icon {
+            width: 24px;
+            height: 24px;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-gray-800">Krishna Soni</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-gray-900">Skills</a>
+                    <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menuButton" class="text-gray-600 hover:text-gray-900" title="okgreat">
+                        <svg class="icon">
+                            <path d="M3 12h18M3 6h18M3 18h18"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="menu-closed md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 text-gray-600 hover:text-gray-900">About</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Skills</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Projects</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-600 hover:text-gray-900">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-r from-blue-500 to-indigo-600">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Krishna Soni</h1>
+                <p class="text-xl md:text-2xl mb-8">Computer Science Student & Developer</p>
+                <p class="text-lg">Sage University, Indore</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <p class="text-gray-700 leading-relaxed">
+                    I'm a BTech Computer Science student at Sage University, Indore, passionate about building innovative solutions 
+                    using modern technologies. My expertise spans across Python development, web technologies, cloud computing, 
+                    and digital marketing. I love creating practical applications that solve real-world problems.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+            <div id="skillsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Skills will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+            <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <svg class="icon text-blue-600">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <path d="M3 9h18"></path>
+                        </svg>
+                        <a href="mailto:krishna105@gmail.com" class="text-gray-700 hover:text-blue-600">
+                            krishna105@gmail.com
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <svg class="icon text-blue-600">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <path d="M3 9h18"></path>
+                        </svg>
+                        <a href="tel:+917415618704" class="text-gray-700 hover:text-blue-600">
+                            +91 7415618704
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <svg class="icon text-blue-600">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        <a href="https://github.com/KRISHNASON1" rel="noopener noreferrer" target="_blank" class="text-gray-700 hover:text-blue-600">
+                            GitHub Profile
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2024 Krishna Soni. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let isMenuOpen = false;
+
+        menuButton.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            mobileMenu.className = isMenuOpen ? 'menu-open md:hidden' : 'menu-closed md:hidden';
+        });
+
+        // Skills data
+        const skills = [
+            { name: "Python Development", icon: "message-square" },
+            { name: "Web Development", icon: "external-link" },
+            { name: "Cloud Computing", icon: "message-square" },
+            { name: "Digital Marketing", icon: "external-link" },
+            { name: "API Development", icon: "message-square" }
+        ];
+
+        // Projects data
+        const projects = [
+            {
+                title: "AI Chatbot with Enhanced UI",
+                description: "Developed a chatbot with a branch-based conversation design for improved user experience. Integrated web scraping capabilities similar to Perplexity.",
+                tech: ["Python", "AI/ML", "Web Scraping"],
+                status: "In Progress"
+            },
+            {
+                title: "API Development & Integration",
+                description: "Built and implemented various APIs, demonstrating strong backend development skills.",
+                tech: ["REST APIs", "Flask", "Python"],
+                status: "Completed"
+            },
+            {
+                title: "Web Scraper",
+                description: "Created a web scraper to collect and process online information for chatbot enhancement.",
+                tech: ["Python", "BeautifulSoup", "Data Processing"],
+                status: "Completed"
+            },
+            {
+                title: "News website",
+                description: "Successfully created a latest news website.",
+                tech: ["News API", "Flask", "python"],
+                status: "Completed"
+            },
+            {
+                title: "Enclop.com Deployment",
+                description: "Successfully deployed website on Azure cloud platform with custom domain configuration.",
+                tech: ["Azure", "Cloud Deployment", "Domain Management"],
+                status: "Live"
+            }
+        ];
+
+        // Populate skills
+        const skillsGrid = document.getElementById('skillsGrid');
+        skills.forEach(skill => {
+            const skillDiv = document.createElement('div');
+            skillDiv.className = 'bg-white rounded-lg shadow-lg p-6 flex items-center space-x-4';
+            skillDiv.innerHTML = `
+                <svg class="icon w-6 h-6">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <path d="M3 9h18"></path>
+                </svg>
+                <span class="text-lg font-medium">${skill.name}</span>
+            `;
+            skillsGrid.appendChild(skillDiv);
+        });
+
+        // Populate projects
+        const projectsGrid = document.getElementById('projectsGrid');
+        projects.forEach(project => {
+            const projectDiv = document.createElement('div');
+            projectDiv.className = 'bg-white rounded-lg shadow-lg p-6';
+            
+            const statusColor = project.status === "Completed" ? "text-green-600" : 
+                              project.status === "Live" ? "text-blue-600" : "text-yellow-600";
+            
+            projectDiv.innerHTML = `
+                <h3 class="text-xl font-bold mb-2">${project.title}</h3>
+                <p class="text-gray-600 mb-4">${project.description}</p>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    ${project.tech.map(tech => `
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+                            ${tech}
+                        </span>
+                    `).join('')}
+                </div>
+                <div class="flex justify-between items-center">
+                    <span class="text-sm ${statusColor}">${project.status}</span>
+                    <svg class="icon w-5 h-5 text-gray-400">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            `;
+            projectsGrid.appendChild(projectDiv);
+        });
+    </script>
+</body>
+</html>
